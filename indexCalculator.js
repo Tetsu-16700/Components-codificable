@@ -1,6 +1,6 @@
-let numeroPrevio = "";
-let operador = "";
-let numeroActual = "0";
+// let numeroPrevio = "";
+// let operador = "";
+// let numeroActual = "0";
 
 function updateDisplay() {
     document.getElementById("operation").textContent = numeroPrevio + operador + numeroActual;
