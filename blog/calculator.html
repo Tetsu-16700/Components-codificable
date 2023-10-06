@@ -129,16 +129,18 @@
                         7. Se procede con 'div' con 'id='
                     </p>
                     <p>
-                        7. 
+                        8. Se coloca nuevamente un 'div' como padre para el siguiente punto.
                     </p>
                     <p>
-                        7. 
+                        9. Dentro de cada elemento mencionado en el punto anterior
+                        se le considera una 'class' junto a su respectivo 'id'. y el texto
+                        que se desea que aparezca en el calculador.
                     </p>
                     <p>
-                        7. 
+                        10. Se cierran los elementos abierto.
                     </p>
                     <p>
-                        7.Esto se vera de la siguiente manera...
+                        11.Esto se vera de la siguiente manera...
                     </p>
                   
                   <h2 id="Procedimiento-en-CSS">Procedimiento en CSS</h2>
@@ -146,143 +148,65 @@
                         1. Se procede a poner estilos a la pagina en general
                      </p>                  
                     <p>
-                        2. Se busca el primer 'div' llamandolo por su clase, se arma la altura, ancho, estructura en general
+                        2. Se busca el primer 'div' llamandolo por su clase, 
+                        se arma la altura, ancho, estructura en general
                     </p>
                      <p>
-                        3. 
-                    </p>
-                    <p>    
-                        4. 
+                        3. Poner si se desea color, radio, borde,dimensiones en general
                     </p>
                     <p>
-                        5.
+                        4. Esto se vera de la siguiente manera...
                     </p>
-                    <p>
-                        6.
-                    </p>
-                    <p>
-                        7. 
-                    </p>
-                    <p>
-                        7. 
-                    </p>
-                    <p>
-                        7. 
-                    </p>
-                    <p>
-                        7. 
-                    </p>
-                    <p>
-                        7. Esto se vera de la siguiente manera...
-                    </p>
-                  <ul>
-                    <li>
-                      <code>&lt;p&gt;</code> - Define un párrafo de texto.
-                    </li>
-                    <li>
-                      <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, ...,
-                      <code>&lt;h6&gt;</code> - Define encabezados de diferentes
-                      niveles.
-                    </li>
-                    <li>
-                      <code>&lt;a&gt;</code> - Crea un enlace a otra página o
-                      recurso.
-                    </li>
-                  </ul>
-                  <h3>Listas</h3>
-                  <p>
-                    Las listas son útiles para organizar contenido. Tenemos dos
-                    tipos de listas en HTML:
-                  </p>
-                  <h4>Lista ordenada</h4>
-                  <pre><code>&lt;ol&gt;
-  &lt;li&gt;Primer ítem&lt;/li&gt;
-  &lt;li&gt;Segundo ítem&lt;/li&gt;
-  &lt;li&gt;Tercer ítem&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-
-                  <h4>Lista desordenada</h4>
-                  <pre><code>&lt;ul&gt;
-  &lt;li&gt;Primer ítem&lt;/li&gt;
-  &lt;li&gt;Segundo ítem&lt;/li&gt;
-  &lt;li&gt;Tercer ítem&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-
-                  <h3>Imágenes</h3>
-                  <p>
-                    Para mostrar imágenes en tu página, utilizamos la etiqueta
-                    <code>&lt;img&gt;</code>. Asegúrate de incluir el atributo
-                    <code>src</code> con la URL de la imagen que deseas mostrar.
-                  </p>
-                  <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</code></pre>
+ 
                   <h2 id="Procedimiento-en-JS">
                     Procedimiento en JS
                   </h2>
                   <p>
-                    La siguiente tabla muestra algunos elementos HTML comunes,
-                    su propiedad <code>display</code> y algunos atributos
-                    principales que pueden ser utilizados con cada elemento.
-                  </p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Elemento</th>
-                        <th>Display</th>
-                        <th>Principales atributos</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>p</td>
-                        <td>block</td>
-                        <td>id, class, style</td>
-                      </tr>
-                      <tr>
-                        <td>h1, h2, ..., h6</td>
-                        <td>block</td>
-                        <td>id, class, style</td>
-                      </tr>
-                      <tr>
-                        <td>img</td>
-                        <td>inline</td>
-                        <td>src, alt, width, height, id, class, style</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <h2 id="Prueba-tu-calculadora">
-                    ¡Prueba tu calcculadora!
-                  </h2>
-                   <div class="cc">
-                        <div class="calculator">
-                            <span class="calculator-display" id="result">0</span>
-                            <span id="operation"></span>
-                        
-                        <div class="calculator-pressure">
+                    1. 
+                 </p>                  
+                <p>
+                    2. 
+                </p>
+                 <p>
+                    3. 
+                </p>
+                <p>
+                    4. 
+                </p>
 
-                            <div class="pressure-numbers">
-                                <button class="pressure tone2" onclick="clearAll()">C</button>
-                                <button class="pressure tone2" onclick="deleteDigit()">⌫</button>
-                                <button class="pressure" onclick="appendNumber('7')">7</button>
-                                <button class="pressure" onclick="appendNumber('8')">8</button>
-                                <button class="pressure" onclick="appendNumber('9')">9</button>
-                                <button class="pressure tone" onclick="setOperator('/')">/</button>
-                                <button class="pressure" onclick="appendNumber('4')">4</button>
-                                <button class="pressure" onclick="appendNumber('5')">5</button>
-                                <button class="pressure" onclick="appendNumber('6')">6</button>
-                                <button class="pressure tone" onclick="setOperator('*')">x</button>
-                                <button class="pressure" onclick="appendNumber('1')">1</button>
-                                <button class="pressure" onclick="appendNumber('2')">2</button>
-                                <button class="pressure" onclick="appendNumber('3')">3</button>
-                                <button class="pressure tone" onclick="setOperator('-')">-</button>
-                                <button class="pressure" onclick="openDecimal('.')">.</button> 
-                                <button class="pressure" onclick="appendNumber('0')">0</button>
-                                <button class="pressure tone" onclick="setOperator('+')">+</button> 
-                                <button class="pressure tone" onclick="calculate()">=</button>        
-                            </div>
+                  <h2 id="Prueba-tu-calculadora">
+                    ¡Enciende la magia con esta calculadora!
+                  </h2>
+                    <div class="generalC">
+                        <div class="calculator">
+                            <div class="calculator-display" id="result">0</div>
+                            <div id="operation"></div>
+                                        
+                            <div class="calculator-pressure">
+                                <div class="pressure-numbers">
+                                    <button class="pressure tone2" onclick="clearAll()">C</button>
+                                    <button class="pressure tone2" onclick="deleteDigit()">⌫</button>
+                                    <button class="pressure" onclick="appendNumber('7')">7</button>
+                                    <button class="pressure" onclick="appendNumber('8')">8</button>
+                                    <button class="pressure" onclick="appendNumber('9')">9</button>
+                                    <button class="pressure tone" onclick="setOperator('/')">/</button>
+                                    <button class="pressure" onclick="appendNumber('4')">4</button>
+                                    <button class="pressure" onclick="appendNumber('5')">5</button>
+                                    <button class="pressure" onclick="appendNumber('6')">6</button>
+                                    <button class="pressure tone" onclick="setOperator('*')">x</button>
+                                    <button class="pressure" onclick="appendNumber('1')">1</button>
+                                    <button class="pressure" onclick="appendNumber('2')">2</button>
+                                    <button class="pressure" onclick="appendNumber('3')">3</button>
+                                    <button class="pressure tone" onclick="setOperator('-')">-</button>
+                                    <button class="pressure" onclick="openDecimal('.')">.</button> 
+                                    <button class="pressure" onclick="appendNumber('0')">0</button>
+                                    <button class="pressure tone" onclick="setOperator('+')">+</button> 
+                                    <button class="pressure tone" onclick="calculate()">=</button>        
+                                </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <script src="indexCalculator.js"></script>
+                                <script src="indexCalculator.js"></script>
 
               </article>
             </div>
