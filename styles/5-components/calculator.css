@@ -1,33 +1,36 @@
 
-.cc {
+.generalC{
     display: flex;
     justify-content: center ;
     align-items: center;
-    height:  100vh;
     padding: 15px;
     font-family: EB Garamond;
 }
+
 .calculator {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+
+    flex-direction: column;  
+    font-size: 2rem; 
     border: 1px solid gray;
-    font-size: 2rem;
-    
-} 
-.calculator-display {
+
+   
+}
+
+
+/*.calculator-disp {
     padding:  25px 15px;
     width: 100%;
     text-align: right;
-    border: 1px solid gray;
-    overflow-x : auto;
-}
-.calculator-pressure {
+}*/
+/*.calculator-pressure {
     display: flex;
     width: 100%;
     
-}
+}*/
+
 .pressure-numbers {
+    
+
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -38,7 +41,7 @@
     text-align: center;
     cursor: pointer;
     background-color: hsl(180, 100%, 97%);
-    border: 1px solid gray;    
+    border: none;    
     font-size: 2rem;
     font-family: EB Garamond;
 }
@@ -47,7 +50,7 @@
     transition: filter .5s;
 }
 .pressure.tone {
-    background-color: hsl(267, 74%, 82%);
+    background-color: hsl(264, 80%, 58%);
 }
 .pressure.tone2 {
     background-color: hsl(165, 81%, 80%);
