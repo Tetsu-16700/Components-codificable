@@ -179,34 +179,35 @@
                   </h2>
                     <div class="generalC">
                         <div class="calculator">
-                            <div class="calculator-display" id="result">0</div>
-                            <div id="operation"></div>
+                          <span id="operation"></span>
+                          <span class="calculator-display" id="result">0</span>
+                            
                                         
-                            <div class="calculator-pressure">
-                                <div class="pressure-numbers">
-                                    <button class="pressure tone2" onclick="clearAll()">C</button>
-                                    <button class="pressure tone2" onclick="deleteDigit()">⌫</button>
-                                    <button class="pressure" onclick="appendNumber('7')">7</button>
-                                    <button class="pressure" onclick="appendNumber('8')">8</button>
-                                    <button class="pressure" onclick="appendNumber('9')">9</button>
-                                    <button class="pressure tone" onclick="setOperator('/')">/</button>
-                                    <button class="pressure" onclick="appendNumber('4')">4</button>
-                                    <button class="pressure" onclick="appendNumber('5')">5</button>
-                                    <button class="pressure" onclick="appendNumber('6')">6</button>
-                                    <button class="pressure tone" onclick="setOperator('*')">x</button>
-                                    <button class="pressure" onclick="appendNumber('1')">1</button>
-                                    <button class="pressure" onclick="appendNumber('2')">2</button>
-                                    <button class="pressure" onclick="appendNumber('3')">3</button>
-                                    <button class="pressure tone" onclick="setOperator('-')">-</button>
-                                    <button class="pressure" onclick="openDecimal('.')">.</button> 
-                                    <button class="pressure" onclick="appendNumber('0')">0</button>
-                                    <button class="pressure tone" onclick="setOperator('+')">+</button> 
-                                    <button class="pressure tone" onclick="calculate()">=</button>        
-                                </div>
-                                </div>
+                          <div class="calculator-pressure">
+                            <div class="pressure-numbers">
+                               <button class="pressure tone2" onclick="clearDisplay()">C</button>
+                               <button class="pressure tone2" onclick="clearDigit()">⌫</button>
+                               <button class="pressure" onclick="appendToDisplay('7')">7</button>
+                               <button class="pressure" onclick="appendToDisplay('8')">8</button>
+                               <button class="pressure" onclick="appendToDisplay('9')">9</button>
+                               <button class="pressure tone" onclick="setOperator('/')">/</button>
+                               <button class="pressure" onclick="appendToDisplay('4')">4</button>
+                               <button class="pressure" onclick="appendToDisplay('5')">5</button>
+                               <button class="pressure" onclick="appendToDisplay('6')">6</button>
+                               <button class="pressure tone" onclick="setOperator('*')">x</button>
+                               <button class="pressure" onclick="appendToDisplay('1')">1</button>
+                               <button class="pressure" onclick="appendToDisplay('2')">2</button>
+                               <button class="pressure" onclick="appendToDisplay('3')">3</button>
+                               <button class="pressure tone" onclick="setOperator('-')">-</button>
+                               <button class="pressure" onclick="appendDecimal('.')">.</button> 
+                               <button class="pressure" onclick="appendToDisplay('0')">0</button>
+                               <button class="pressure tone" onclick="setOperator('+')">+</button> 
+                               <button class="pressure tone" onclick="calculateResult()">=</button>        
+                              </div>
+                             </div>
                             </div>
                         </div>
-                                <script src="indexCalculator.js"></script>
+                                <script src="index.js"></script>
 
               </article>
             </div>
