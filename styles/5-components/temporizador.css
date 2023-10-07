@@ -24,10 +24,6 @@ button:active{
 
 
 /* TEMPORIZADOR (TITULO) */
-.temporizador-container_title{
-
-}
-
 .temporizador-title{
     color: var(--foreground, #171717);
     text-align: center;
