@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>"Domina el Tiempo: Crea tu propio temporizador en JavaScript"</title>
     <link rel="stylesheet" href="/styles/index.css" />
+    <audio id="beep" src="/assets/audio/title.mp3"></audio>
   </head>
   <body>
     <div class="pancake-stack" id="top">
@@ -84,7 +85,7 @@
                 <div class="content">
                   <h1>"Domina el Tiempo: Crea tu propio temporizador en JavaScript"</h1>
                   <img
-                    src="/assets/images/tempo.jpg"
+                    src="/assets/images/Timer.png"
                     alt="Phone taking picture of meal"
                     width="1344"
                     height="896"
@@ -155,6 +156,34 @@
                     cómo implementar tu propio temporizador personalizado!
                   </p>
                 </div>
+                <div class="temporizador">
+                  <div class="temporizador-container_title">
+                      <h2 class="temporizador-title">
+                          Temporizador
+                      </h2>
+                  </div>
+          
+                  <div class="temporizador-container_input">
+                      <div class="temporizador-container_input-segundos">
+                          <input type="number" class="temporizador-input" placeholder="00">
+                          <span class="temporizador-input_texto">
+                              segundos
+                          </span>
+                      </div>
+                      <button class="temporizador-button_empezar">Empezar</button>
+                  </div>
+                  
+                  <div class="temporizador-contador" >
+                      --
+                  </div>
+          
+                  <div class="temporizador-container_buttons">
+                      <button class="temporizador-button_pausar" disabled>Pausar</button>
+                      <button class="temporizador-button_detener" disabled>Detener</button>
+                  </div>
+                  
+              </div>
+              <script src="/temporizador.js"></script>
                 <a class="back-to-top" href="#top">
                   <svg
                     width="20"

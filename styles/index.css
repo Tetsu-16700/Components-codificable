@@ -51,7 +51,12 @@
 @import url(5-components/pricing.css);
 @import url(5-components/unete-form.css);
 @import url(5-components/calculator.css);
+
 @import url(5-components/menu-mobile.css);
+
+@import url(5-components/temporizador.css);
+
+
 
 /* 6. Utilities */
 @import url(6-utilities/utilities.css);
