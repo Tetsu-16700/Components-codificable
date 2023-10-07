@@ -112,7 +112,7 @@
                   </p>
                   <h2 id="Procedimiento-en-html">¿Procedimiento en HTML?</h2>
                     <p>
-                        1. Armar la estructuta de HTML poniendo en Visual "! + Enter" 
+                        <strong>1.</strong> Armar la estructuta de HTML poniendo en Visual "! + Enter" 
                     </p>  
                     <img
                     src="/assets/images/unohtml.png"
@@ -121,10 +121,11 @@
                     height="896"
                   />        
                     <p>
-                        2. Vincular el HTML y CSS mediante "link:CSS + Enter"
+                        <strong>2.</strong>Vincular el HTML y CSS mediante "<code>&lt;link:CSS&gt;</code> + Enter"
                     </p>
                     <p>
-                        3. Dentro de 'body' vinculamos el HTML con JS mediante: "scrip src='nombre de carpeta JS"
+                        <strong>3.</strong> Dentro de <code>&lt;body&gt;</code> vinculamos el HTML con JS mediante: 
+                        "<code>&lt;scrip src='nombre de carpeta JS&gt;</code>"
                     </p>
                     <img
                     src="/assets/images/doshtml.png"
@@ -133,30 +134,30 @@
                     height="896"
                   />  
                     <p>    
-                        4. Ponerle titulo a tu proyecto en 'title'. (se ve en el punto nro 1)
+                        <strong>4.</strong> Ponerle titulo a tu proyecto en <code>&lt;title&gt;</code>. (se ve en el punto nro 1)
                     </p>
                     <p>
-                        5.Seguidamente armar un 'div' con 'class=container' para posicionar la calculadora.
+                       <strong>5.</strong> armar un <code>&lt;<code>&lt;div&gt;</code>&gt;</code> con 'class=container' para posicionar la calculadora.
                     </p>
                     <p>
-                        6. Nuevamente tomamos un nuevo 'div' donde se encontrara las primeras operaciones.
+                        <strong>6.</strong> Nuevamente tomamos un nuevo '<code>&lt;div&gt;</code>' donde se encontrara las primeras operaciones.
                     </p>
                     <p>
-                        7. Se procede con 'div' con 'id='
+                        <strong>7.</strong> Se procede con '<code>&lt;div&gt;</code>' con 'id='
                     </p>
                     <p>
-                        8. Se coloca nuevamente un 'div' como padre para el siguiente punto.
+                      <strong>8.</strong> Se coloca nuevamente un '<code>&lt;div&gt;</code>' como padre para el siguiente punto.
                     </p>
                     <p>
-                        9. Dentro de cada elemento mencionado en el punto anterior
+                      <strong>9.</strong> Dentro de cada elemento mencionado en el punto anterior
                         se le considera una 'class' junto a su respectivo 'id'. y el texto
                         que se desea que aparezca en el calculador.
                     </p>
                     <p>
-                        10. Se cierran los elementos abierto.
+                        <strong>10.</strong> Se cierran los elementos abierto.
                     </p>
                     <p>
-                        11.Esto se vera de la siguiente manera...
+                        <strong>11.</strong>Esto se vera de la siguiente manera...
                     </p>
                     <img
                     src="/assets/images/CapturaHTML.png"
@@ -166,17 +167,17 @@
                   />
                   <h2 id="Procedimiento-en-CSS">Procedimiento en CSS</h2>
                     <p>
-                        1. Se procede a poner estilos a la pagina en general
+                        <strong>1.</strong> Se procede a poner estilos a la pagina en general
                      </p>                  
                     <p>
-                        2. Se busca el primer 'div' llamandolo por su clase, 
+                        <strong>2.</strong> Se busca el primer <code>&lt;div&gt;</code> llamandolo por su clase, 
                         se arma la altura, ancho, estructura en general
                     </p>
                      <p>
-                        3. Poner si se desea color, radio, borde,dimensiones en general
+                        <strong>3.</strong> Poner si se desea color, radio, borde,dimensiones en general
                     </p>
                     <p>
-                        4. Esto se vera de la siguiente manera...
+                        <strong>4.</strong> Esto se vera de la siguiente manera...
                     </p>
                     <img
                     src="/assets/images/CapturaCSS.png"
@@ -188,14 +189,14 @@
                     Procedimiento en JS
                   </h2>
                   <p>
-                    1. La calculadora debe de gestionar lo siguiente:
+                    <strong>1.</strong> La calculadora debe de gestionar lo siguiente:
                     <li>En cualquier momento, la calculadora debe mostrar la 
                       "operación actual". La operación actual se puede definir 
                       como la concatenación de numeroPrevio + operador + numeroActual 
                       (aquí el símbolo '+' significa concatenación).</li>
                  </p>                  
                 <p>
-                    2. El usuario puede agregar dígitos, cada vez que el usuario haga clic 
+                    <strong>2.</strong> El usuario puede agregar dígitos, cada vez que el usuario haga clic 
                     en un botón de dígito (0...9), el valor se concatena al numeroActual. 
                     Algunas consideraciones:
                     <li>Si numeroActual es "0", hacer clic en un número del 1 al 9 reemplaza 
@@ -208,7 +209,7 @@
                       punto nuevamente no hace nada.</li>
                 </p>
                  <p>
-                    3. El usuario puede agregar un operador,Cuando el usuario hace clic en un botón 
+                    <strong>3.</strong> El usuario puede agregar un operador,Cuando el usuario hace clic en un botón 
                     de operador (÷, ×, -, +), el operador debe establecerse en ese valor, numeroPrevio 
                     debe tomar el valor de numeroActual y numeroActual debe establecerse como un string 
                     vacío
@@ -216,14 +217,14 @@
                       debe reemplazar el valor del operador actual.</li>
                 </p>
                 <p>
-                    4. El usuario puede hacer un cálculo,clic en el botón de cálculo (=), se debe calcular 
+                    <strong>4.</strong> El usuario puede hacer un cálculo,clic en el botón de cálculo (=), se debe calcular 
                     la operación actual y numeroActual debe establecerse en el resultado, numeroPrevio y 
                     operador deben establecerse en string vacío
                 </p>
                     <li>Si numeroActual es un string vacío cuando se hace clic en el botón de cálculo, 
                       se deberá tomar el valor de numeroPrevio como numeroActual y calcular la operación.</li>
                 <p>
-                    5.El usuario puede eliminar un dígito, clic en el botón de borrar (⌫), se debe eliminar 
+                    <strong>5.</strong> usuario puede eliminar un dígito, clic en el botón de borrar (⌫), se debe eliminar 
                     el último dígito de numeroActual
                 </p>
                     <li>Si numeroActual tiene solo 1 dígito y numeroPrevio y operador son strings vacíos, 
@@ -234,7 +235,7 @@
                       entonces numeroActual toma el valor de numeroPrevio y numeroPrevio y operador deben 
                       establecerse en string vacío.</li>
                 <p>
-                    6. El usuario puede restablecer la calculadora, Cuando el usuario hace clic en el símbolo C, 
+                    <strong>6.</strong> El usuario puede restablecer la calculadora, Cuando el usuario hace clic en el símbolo C, 
                     todos los valores vuelven al estado inicial.
                 </p>
                 
