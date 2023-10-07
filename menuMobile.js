@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <path d="M4 4L12 12M4 12L12 4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   `;
+  menu.style.display = "none";
   function toggleMenu() {
     menuButton.classList.toggle("opened");
     menu.style.display = menu.style.display === "block" ? "none" : "block";
