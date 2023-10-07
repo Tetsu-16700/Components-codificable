@@ -82,10 +82,10 @@ function clearDisplay() {
 }
 function clearDigit() {
     if (numeroActual.length > 1) {
-        // Si el número actual tiene más de un dígito, elimina el último dígito.
+       
         numeroActual = numeroActual.slice(0, -1);
     } else {
-        // Si el número actual tiene solo un dígito, establece el número actual en "0".
+        
         numeroActual = "0";
     }
     updateDisplay();
