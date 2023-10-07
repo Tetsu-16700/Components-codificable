@@ -176,18 +176,56 @@
                     Procedimiento en JS
                   </h2>
                   <p>
-                    1. 
+                    1. La calculadora debe de gestionar lo siguiente:
+                    <li>En cualquier momento, la calculadora debe mostrar la 
+                      "operación actual". La operación actual se puede definir 
+                      como la concatenación de numeroPrevio + operador + numeroActual 
+                      (aquí el símbolo '+' significa concatenación).</li>
                  </p>                  
                 <p>
-                    2. 
+                    2. El usuario puede agregar dígitos, cada vez que el usuario haga clic 
+                    en un botón de dígito (0...9), el valor se concatena al numeroActual. 
+                    Algunas consideraciones:
+                    <li>Si numeroActual es "0", hacer clic en un número del 1 al 9 reemplaza 
+                      el numero actual por dicho número.</li>
+                    <li>Si numeroActual es "0", hacer clic en el botón "0" nuevamente no 
+                      hace nada.</li>
+                    <li>Si el usuario hace clic en el punto (.), se agregará un punto decimal 
+                      al numeroActual.</li>
+                    <li>Si un punto decimal ya está presente en numeroActual, hacer clic en el 
+                      punto nuevamente no hace nada.</li>
                 </p>
                  <p>
-                    3. 
+                    3. El usuario puede agregar un operador,Cuando el usuario hace clic en un botón 
+                    de operador (÷, ×, -, +), el operador debe establecerse en ese valor, numeroPrevio 
+                    debe tomar el valor de numeroActual y numeroActual debe establecerse como un string 
+                    vacío
+                    <li>Si el operador ya tiene un valor (no es nulo), hacer clic en un botón de operador 
+                      debe reemplazar el valor del operador actual.</li>
                 </p>
                 <p>
-                    4. 
+                    4. El usuario puede hacer un cálculo,clic en el botón de cálculo (=), se debe calcular 
+                    la operación actual y numeroActual debe establecerse en el resultado, numeroPrevio y 
+                    operador deben establecerse en string vacío
                 </p>
-
+                    <li>Si numeroActual es un string vacío cuando se hace clic en el botón de cálculo, 
+                      se deberá tomar el valor de numeroPrevio como numeroActual y calcular la operación.</li>
+                <p>
+                    5.El usuario puede eliminar un dígito, clic en el botón de borrar (⌫), se debe eliminar 
+                    el último dígito de numeroActual
+                </p>
+                    <li>Si numeroActual tiene solo 1 dígito y numeroPrevio y operador son strings vacíos, 
+                      numeroActual debe cambiar a "0"</li>
+                    <li>Si numeroActual tiene solo 1 dígito pero numeroPrevio y operador no son nulos, 
+                      numeroActual debe establecerse en ""</li>
+                    <li>Si numeroActual es un string vacío y numeroPrevio y operador no son strings vacíos, 
+                      entonces numeroActual toma el valor de numeroPrevio y numeroPrevio y operador deben 
+                      establecerse en string vacío.</li>
+                <p>
+                    6. El usuario puede restablecer la calculadora, Cuando el usuario hace clic en el símbolo C, 
+                    todos los valores vuelven al estado inicial.
+                </p>
+                
                   <h2 id="Prueba-tu-calculadora">
                     ¡Enciende la magia con esta calculadora!
                   </h2>
