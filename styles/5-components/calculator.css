@@ -5,12 +5,14 @@
     align-items: center;
     padding: 15px;
     font-family: Pixelify Sans;
+    text-align: right;
 }
 .calculator {
 
     flex-direction: column;  
     font-size: 2rem; 
     border: 1px solid gray;
+
 
 }
 .calculator-disp {
