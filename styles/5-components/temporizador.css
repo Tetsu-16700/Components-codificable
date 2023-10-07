@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap");
+
+
+/* BOTONES CONFIGURACION */
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active{
+    transform: translateY(2px);
+}
+
+.temporizador {
+    display: inline-flex;
+    padding: 1rem var(--spacing-8, 2rem);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-8, 2rem);
+    background: #FFF;
+    font-family: 'Inter';
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TEMPORIZADOR (TITULO) */
+.temporizador-title{
+    color: var(--foreground, #171717);
+    text-align: center;
+}
+
+/* PRIMERA PARTE- INPUT - SEGUNDOS - BOTON EMPEZAR*/
+.temporizador-container_input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.temporizador-container_input-segundos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.temporizador-input {
+    display: flex;
+    width: 3.75rem;
+    height: 2.5rem;
+    align-items: flex-start;
+    gap: 0.25rem;
+    border-radius: var(--rounded-md, 0.375rem);
+    border: 1px solid var(--border, #D4D4D4);
+
+}
+
+.temporizador-input:focus{
+    outline: none;
+}
+
+.temporizador-input_texto{
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; 
+}
+
+/*botton EMPEZAR*/
+.temporizador-button_empezar{
+    display: flex;
+    height: var(--spacing-10, 2.5rem);
+    padding: var(--spacing-2, 0.5rem) var(--spacing-4, 1rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2, 0.5rem);
+
+    border-radius: var(--rounded-md, 0.375rem);
+    border: 1px solid var(--success-border, #16A34A);
+
+    color: var(--success-foreground, #052E16);
+
+    background-color: var(--success, #F0FDF4);;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; 
+
+}
+
+/*botton EMPEZAR DESABILITADO*/
+.temporizador-button_empezar:disabled{
+    opacity: 0.5;
+}
+
+
+/*SEGUNDA PARTE - CONTADOR 00 */
+.temporizador-contador{
+    color: var(--muted-foreground, #525252);
+    text-align: center;
+    font-family: 'Familjen Grotesk';
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem; /* 100% */
+    
+}
+
+/* TERCERA PARTE - BONTONES PAUSAR-DETENER*/
+.temporizador-container_buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*Boton PAUSAR normal*/
+.temporizador-button_pausar{
+    display: flex;
+    height: var(--spacing-10, 2.5rem);
+    padding: var(--spacing-2, 0.5rem) var(--spacing-4, 1rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2, 0.5rem);
+
+    border-radius: var(--rounded-md, 0.375rem);
+    background: var(--secondary, #E5E5E5);
+    border-style: none;
+}
+
+/*Boton PAUSAR desabilitado*/
+.temporizador-button_pausar:disabled{
+    opacity: 0.5;
+    border: none;
+}
+
+
+
+.temporizador-button_pausar:disabled{
+    opacity: 0.5;
+    border: none;
+}
+
+.temporizador-button_pausar:disabled:hover{
+    cursor: no-drop;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    opacity: 1;
+}
+
+/*Boton DETENER */
+.temporizador-button_detener {
+    
+    height: 2.5rem;
+    padding: var(--spacing-2, 0.5rem) var(--spacing-4, 1rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2, 0.5rem);
+
+    border-radius: var(--rounded-md, 0.375rem);
+    border: 1px solid var(--danger-border, #DC2626);
+    background: var(--danger, #FEF2F2);
+
+    color: var(--danger-foreground, #450A0A);
+
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 142.857% */
+
+}
+
+.temporizador-button_detener:disabled:hover{
+    opacity: 0.5;
+
+}
+
+.temporizador-button_detener:disabled:hover{
+    cursor: no-drop;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.temporizador-button_detener:disabled:active{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
