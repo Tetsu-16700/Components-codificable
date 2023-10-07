@@ -137,20 +137,21 @@
                         <strong>4.</strong> Ponerle titulo a tu proyecto en <code>&lt;title&gt;</code>. (se ve en el punto nro 1)
                     </p>
                     <p>
-                       <strong>5.</strong> armar un <code>&lt;<code>&lt;div&gt;</code>&gt;</code> con 'class=container' para posicionar la calculadora.
+                       <strong>5.</strong> armar un <code>&lt;div&gt;</code> con <code>&lt;class=container&gt;</code> para posicionar 
+                       la calculadora.
                     </p>
                     <p>
                         <strong>6.</strong> Nuevamente tomamos un nuevo '<code>&lt;div&gt;</code>' donde se encontrara las primeras operaciones.
                     </p>
                     <p>
-                        <strong>7.</strong> Se procede con '<code>&lt;div&gt;</code>' con 'id='
+                        <strong>7.</strong> Se procede con '<code>&lt;div&gt;</code>' con <code>&lt;id=&gt;</code>
                     </p>
                     <p>
                       <strong>8.</strong> Se coloca nuevamente un '<code>&lt;div&gt;</code>' como padre para el siguiente punto.
                     </p>
                     <p>
                       <strong>9.</strong> Dentro de cada elemento mencionado en el punto anterior
-                        se le considera una 'class' junto a su respectivo 'id'. y el texto
+                        se le considera una <code>&lt;class&gt;</code> junto a su respectivo <code>&lt;id=&gt;</code>. y el texto
                         que se desea que aparezca en el calculador.
                     </p>
                     <p>
@@ -191,51 +192,51 @@
                   <p>
                     <strong>1.</strong> La calculadora debe de gestionar lo siguiente:
                     <li>En cualquier momento, la calculadora debe mostrar la 
-                      "operación actual". La operación actual se puede definir 
-                      como la concatenación de numeroPrevio + operador + numeroActual 
-                      (aquí el símbolo '+' significa concatenación).</li>
+                      <strong>"operación actual"</strong>. La operación actual se puede definir 
+                      como la concatenación de <strong>numeroPrevio + operador + numeroActual </strong>
+                      (aquí el símbolo <strong>'+'</strong> significa concatenación).</li>
                  </p>                  
                 <p>
-                    <strong>2.</strong> El usuario puede agregar dígitos, cada vez que el usuario haga clic 
-                    en un botón de dígito (0...9), el valor se concatena al numeroActual. 
+                    <strong>2.</strong> El usuario puede agregar dígitos, cada vez que el usuario haga <strong>clic</strong>  
+                    en un botón de dígito <strong>(0...9)</strong>, el valor se concatena al <strong>numeroActual</strong>. 
                     Algunas consideraciones:
-                    <li>Si numeroActual es "0", hacer clic en un número del 1 al 9 reemplaza 
+                    <li>Si <strong>numeroActual</strong> es <strong>"0"</strong>, hacer <strong>clic</strong>  en un número del <strong>1 al 9</strong> reemplaza 
                       el numero actual por dicho número.</li>
-                    <li>Si numeroActual es "0", hacer clic en el botón "0" nuevamente no 
+                    <li>Si <strong>numeroActual</strong> es <strong>"0"</strong>, hacer <strong>clic</strong>  en el botón "0<strong>"0"</strong> nuevamente no 
                       hace nada.</li>
-                    <li>Si el usuario hace clic en el punto (.), se agregará un punto decimal 
-                      al numeroActual.</li>
-                    <li>Si un punto decimal ya está presente en numeroActual, hacer clic en el 
+                    <li>Si el usuario hace <strong>click</strong>  en el punto <strong>(.)</strong>, se agregará un punto decimal 
+                      al <strong>numeroActual</strong>.</li>
+                    <li>Si un punto decimal ya está presente en <strong>numeroActual</strong>, hacer <strong>clic</strong>  en el 
                       punto nuevamente no hace nada.</li>
                 </p>
                  <p>
-                    <strong>3.</strong> El usuario puede agregar un operador,Cuando el usuario hace clic en un botón 
-                    de operador (÷, ×, -, +), el operador debe establecerse en ese valor, numeroPrevio 
-                    debe tomar el valor de numeroActual y numeroActual debe establecerse como un string 
+                    <strong>3.</strong> El usuario puede agregar un operador,Cuando el usuario hace <strong>clic</strong> en un botón 
+                    de operador <strong>(÷, ×, -, +)</strong>, el operador debe establecerse en ese valor, <strong>numeroPrevio</strong> 
+                    debe tomar el valor de <strong>numeroActual</strong> y <strong>numeroActual</strong> debe establecerse como un string 
                     vacío
-                    <li>Si el operador ya tiene un valor (no es nulo), hacer clic en un botón de operador 
+                    <li>Si el operador ya tiene un valor (no es nulo), hacer <strong>clic</strong> en un botón de operador 
                       debe reemplazar el valor del operador actual.</li>
                 </p>
                 <p>
-                    <strong>4.</strong> El usuario puede hacer un cálculo,clic en el botón de cálculo (=), se debe calcular 
-                    la operación actual y numeroActual debe establecerse en el resultado, numeroPrevio y 
+                    <strong>4.</strong> El usuario puede hacer un cálculo,<strong>clic</strong> en el botón de cálculo <strong>(=)</strong>, se debe calcular 
+                    la operación actual y <strong>numeroActual</strong> debe establecerse en el resultado, <strong>numeroPrevio</strong> y 
                     operador deben establecerse en string vacío
                 </p>
-                    <li>Si numeroActual es un string vacío cuando se hace clic en el botón de cálculo, 
-                      se deberá tomar el valor de numeroPrevio como numeroActual y calcular la operación.</li>
+                    <li>Si <strong>numeroActual</strong> es un string vacío cuando se hace <strong>clic</strong> en el botón de cálculo, 
+                      se deberá tomar el valor de <strong>numeroPrevio</strong> como <strong>numeroActual</strong> y calcular la operación.</li>
                 <p>
-                    <strong>5.</strong> usuario puede eliminar un dígito, clic en el botón de borrar (⌫), se debe eliminar 
-                    el último dígito de numeroActual
+                    <strong>5.</strong> usuario puede eliminar un dígito, <strong>clic</strong> en el botón de borrar <strong>(⌫)</strong>, se debe eliminar 
+                    el último dígito de <strong>numeroActual</strong>
                 </p>
-                    <li>Si numeroActual tiene solo 1 dígito y numeroPrevio y operador son strings vacíos, 
-                      numeroActual debe cambiar a "0"</li>
-                    <li>Si numeroActual tiene solo 1 dígito pero numeroPrevio y operador no son nulos, 
-                      numeroActual debe establecerse en ""</li>
-                    <li>Si numeroActual es un string vacío y numeroPrevio y operador no son strings vacíos, 
-                      entonces numeroActual toma el valor de numeroPrevio y numeroPrevio y operador deben 
+                    <li>Si <strong>numeroActual</strong> tiene solo <strong>1</strong> dígito y <strong>numeroPrevio</strong> y operador son strings vacíos, 
+                      <strong>numeroActual</strong> debe cambiar a <strong>"0"</strong></li>
+                    <li>Si <strong>numeroActual</strong> tiene solo <strong>1</strong> dígito pero <strong>numeroPrevio</strong> y operador no son nulos, 
+                      <strong>numeroActual</strong> debe establecerse en ""</li>
+                    <li>Si <strong>numeroActual</strong> es un string vacío y <strong>numeroPrevio</strong> y operador no son strings vacíos, 
+                      entonces <strong>numeroActual</strong> toma el valor de <strong>numeroPrevio</strong> y <strong>numeroPrevio</strong> y operador deben 
                       establecerse en string vacío.</li>
                 <p>
-                    <strong>6.</strong> El usuario puede restablecer la calculadora, Cuando el usuario hace clic en el símbolo C, 
+                    <strong>6.</strong> El usuario puede restablecer la calculadora, Cuando el usuario hace <strong>clic</strong> en el símbolo C<strong>C</strong>, 
                     todos los valores vuelven al estado inicial.
                 </p>
                 
