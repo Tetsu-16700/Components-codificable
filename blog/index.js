@@ -3,12 +3,14 @@ let operador = "";
 let numeroActual = "0";
 
 function appendToDisplay(digit) {
-    if (numeroActual === "0" || numeroActual === "-0") {
-        numeroActual = digit;
-    } else {
+    if (numeroActual.length < 15) {
+        if (numeroActual === "0" || numeroActual === "-0") {
+            numeroActual = digit;
+        } else {
         numeroActual += digit;
+        }
+         updateDisplay();
     }
-    updateDisplay();
 }
 
 
