@@ -26,11 +26,14 @@ function setOperator(op) {
     if (numeroActual !== "") {
         if (numeroPrevio === "") {
             numeroPrevio = numeroActual;
+            numeroActual = "";
         } else {
             calcularResultado();
         }
         operador = op;
-        numeroActual = "";
+        updateDisplay();
+    } else if (numeroPrevio !== "") {
+        operador = op;
         updateDisplay();
     }
 }
