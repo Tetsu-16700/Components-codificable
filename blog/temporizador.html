@@ -52,8 +52,7 @@
                   </li>
                   <li>
                     <a href="#funcionalidad-javaScript"
-                      >Funcionalidad JavaScript</a
-                    >
+                      >Funcionalidad JavaScript</a>
                   </li>
                   <li>
                     <a href="#hora-de-ponerlo-en-practica"
@@ -100,12 +99,13 @@
                     Nuestro punto de partida será la creación de una estructura HTML
                     que incluirá los elementos necesarios. Utilizaremos etiquetas 
                     <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code> y 
-                    <code>&lt;div&gt;</code>. Además, debemos vincular un archivo CSS 
+                    <code>&lt;div&gt;</code> y un contador que mostrará los segundos
+                    restantes. Además, debemos vincular un archivo CSS 
                     y un archivo JavaSript para dar estilo y funcionalidad al 
                     temporizador.
                   </p>
                   <img
-                    src="/assets/images/html.png.png"
+                    src="/assets/images/html.png"
                     alt="htmlLogo tempo"
                     width="1344"
                     height="896"
@@ -116,10 +116,43 @@
                     estilos ayudan a que el temporizador se vea limpio, atractivo y 
                     fácil de usar.
                   </p>
+                  <pre><code>  1. Definamos estilos para el campo de entrada.
+      .temporizador-input{
+      padding: 5px;
+      font-size: 16px;
+      }
+  2. Definamos estilos para el contador.
+      .temporizador-contaador {
+      font-size: 24px;
+      color: #333;
+      margin-top: 10px;
+      }
+  3. Definamos estilos para los botones.
+      .temporizador-button_empezar,
+      .temporizador-button_pausar,
+      .temporizador-button_detener {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-top: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      }</code></pre>
                   <h2 id="funcionalidad-javaScript">Funcionalidad JavaScript</h2>
                   <p>
-                    La verdadera magia ocurre en el código JavaScript.
+                    La verdadera magia ocurre en el código JavaScript. Ahora, vamos
+                    a implementar la funcionalidad del temporizador en
+                    JavaScript, este código se encargará de manejar el incio, pausa 
+                    y detención del temporizador.
                   </p>
+                  <img
+                    src="/assets/images/tempo.js.png"
+                    alt="htmlLogo tempo"
+                    width="1344"
+                    height="896"
+                  /> 
                  <ul>
                     <li>
                     Evento de "Empezar".
@@ -130,20 +163,60 @@
                     y lo convierte en un número entero. Si el valor es mayor que cero,
                     se deshabilita el botón "Empezar" 
                   </p>
+                  <pre><code>function empezarTemporizador() {
+const inputValor = parseInt(inputSegundos.value);
+if (isNaN(inputValor)) {
+
+* Mostrar mensaje de error
+
+contador.textContent = "Ingresa un número válido";
+contador.style.fontSize = "16px";
+contador.style.color = 'rgba(220, 38, 28, 1)';
+} else {
+segundosRestantes = inputValor;
+actualizarContador();
+                
+contador.style.fontSize = "";
+contador.style.color = "";
+}
+}  </code></pre>
                     <li>
-                    Evento de "Pausar/Continuar".
+                    Evento deshabilitar input y botón de empezar, habilitar "Pausar/Detener".
                     </li>
-                  <p>
-                    Cuando el usuario hace click en el botón "Pausar", se ejecuta una función.
-                  </p>
+                  <pre><code>inputSegundos.disabled = true;
+btnEmpezar.disabled = true;
+btnPausar.disabled = false;
+btnDetener.disabled = false;
+</code></pre>
                   <li>
-                    Evento de "Detener".
+                    Evento de "Iniciar el Temporizador".
                     </li>
-                  <p>
-                    Cuando el usuario hace click en el botón "Detener", simplemente llamamos
-                    a la función <code>&lt;resetTimer&gt;</code> para detener el temporizador 
-                    y restablecer todo al estado inicial.
-                  </p>
+                    <pre><code>temporizador = setInterval(function() {
+if (segundosRestantes &lt;= 0) {
+detenerTemporizador();
+} else {
+segundosRestantes--;
+actualizarContador();
+}
+}, 1000); </code></pre>
+<li>
+  Evento "Detener el Temporizador".
+  </li>
+<pre><code>function detenerTemporizador() {
+clearInterval(temporizador);
+temporizador = null;
+segundosRestantes = 0;
+actualizarContador();
+inputSegundos.value = "";
+inputSegundos.disabled = false;
+btnEmpezar.disabled = false;
+btnPausar.disabled = true;
+btnDetener.disabled = true;
+
+const beep = document.getElementById("beep");
+beep.play();
+}
+</code></pre>
                 </ul>
                   
                   <h2 id="hora-de-ponerlo-en-practica">
