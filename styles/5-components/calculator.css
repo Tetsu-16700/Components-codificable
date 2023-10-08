@@ -5,13 +5,13 @@
     align-items: center;
     padding: 15px;
     font-family: SansRoboto Mono;
-    text-align: right;
+    text-align: center;
        
 }
 .calculator {
 
     width: 300px;
-    border: 1px solid hsl(0, 0%, 0%);
+    border: 1px solid hsl(140, 2%, 36%);
     border-radius: 3px;
     font-size: 2rem;
     flex-direction: column;
@@ -51,12 +51,12 @@
     transition: filter .5s;
 }
 .pressure.tone {
-    background-color: hsl(264, 80%, 58%);
+    background-color: hsl(283, 51%, 69%);
     font-family: Roboto Mono;
     
 }
 .pressure.tone2 {
-    background-color: hsl(165, 81%, 80%);
+    background-color: hsl(227, 14%, 73%);
     width: 50%;
     font-family: Roboto Mono;
     
