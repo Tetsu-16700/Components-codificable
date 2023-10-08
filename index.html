@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codificable</title>
     <link rel="stylesheet" href="/styles/index.css" />
+    <script src="menuMobile.js"></script>
+    <script src="modalLogin.js"></script>
   </head>
   <body>
     <div class="pancake-stack">
@@ -17,7 +19,38 @@
           </ul>
         </nav>
         <div class="header__actions">
-          <button class="button button--sm">Login</button>
+          <button class="button button--sm" onclick="openModal()">Login</button>
+          <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close-button" onclick="closeModal()">&times;</span>
+              <strong><h2 class="tittle-modal">Ingresa tu Cuenta</h2></strong>
+              <form>
+                <div class="data-modal">
+                  <label for="username">Email</label>
+                  <input
+                    class="input-modal"
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="user@mail.com"
+                    required
+                  />
+                </div>
+                <div class="data-modal">
+                  <label for="password">Password</label>
+                  <input
+                    class="input-modal"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="*****"
+                    required
+                  />
+                </div>
+                <button type="submit" class="button button-modal">Login</button>
+              </form>
+            </div>
+          </div>
         </div>
         <button class="header__menu-icon button button--icon button--outline">
           <svg
@@ -46,7 +79,6 @@
           </ul>
         </div>
       </header>
-      <script src="menuMobile.js"></script>
       <main>
         <section class="hero2">
           <div class="container">
